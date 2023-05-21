@@ -1,0 +1,47 @@
+@import '../globalSass/colors';
+@import '../globalSass/fonts';
+@mixin main_titles{
+  font-size: 4rem;
+  color: $color6;
+  letter-spacing: 5px;
+  opacity: 0.8;
+  font-family: $font2;
+  margin-bottom: 1rem;
+}
+@mixin paragraph{
+  font-size: 2rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@mixin button-style{
+  padding:.7rem 3rem;
+  font-size: 2rem;
+  color:$color4;
+  background:$color1;
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  letter-spacing: 3px;
+}
+@mixin button-style-before{
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: -100%;
+  background: #fff9;
+  height: 150%;
+  width: 20%;
+  transform: rotate(25deg);
+  z-index: -1;
+}
+@mixin button-style-before-hover{
+  transition: .3s linear;
+  left: 120%;
+}
+@mixin button-hover-active{
+  color: $color4;
+}

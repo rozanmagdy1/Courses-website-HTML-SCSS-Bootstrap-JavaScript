@@ -1,0 +1,60 @@
+@import "../globalSass/colors";
+@import "../globalSass/mixins";
+
+.about .image, .content {
+  flex: 1 1 40rem;
+}
+
+.about .image img {
+  height: 65vh;
+  width: 90%;
+}
+
+.about .content h3 {
+  font-size: 3rem;
+  color: $color5;
+}
+
+.about .content p {
+  font-size: 1.5rem;
+  color: $color5;
+  padding: 1rem 0;
+}
+
+.about .btn {
+  @include button-style;
+  margin-left: 5em;
+}
+
+.about .btn::before {
+  @include button-style-before;
+}
+
+.about .btn:hover::before {
+  @include button-style-before-hover;
+}
+
+.about .btn:hover, .about .btn:active {
+  @include button-hover-active;
+}
+
+@media screen and (max-width: 767px) {
+  .about .content h3 {
+    font-size: 3rem;
+  }
+  .about .content {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about .content h3 {
+    font-size: 4rem;
+  }
+  .about .content p {
+    font-size: 2rem;
+  }
+  .about a .btn {
+    font-size: 3rem;
+  }
+}

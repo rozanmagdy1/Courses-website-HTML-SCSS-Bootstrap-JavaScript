@@ -1,0 +1,24 @@
+@import "../globalSass/colors";
+@import "../globalSass/fonts";
+@import "../globalSass/mixins";
+
+.footer{
+  background:$color1;
+  width: 100%;
+}
+.footer h1{
+  @include main_titles;
+  color: white;
+}
+.footer li{
+  margin-top: 10px;
+}
+.footer li a{
+  font-size: 1.8rem;
+}
+.footer p {
+  font-size: 1.8rem;
+}
+#clock{
+  font-size: 1.8rem;
+}

@@ -1,0 +1,430 @@
+.navbar {
+  z-index: 1000;
+  padding: 1.5rem 7%;
+  background: linear-gradient(90deg, #ff44aa, #990099);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navbar ul li a:hover {
+  color: #666;
+}
+
+.line {
+  width: 3px;
+  height: 20px;
+  background-color: #fff;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  outline: none;
+  width: auto;
+}
+
+.navbar .navbar-toggler-icon {
+  width: 30px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("./static/burger.svg") !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-collapse.icons.collapse.show {
+  background-color: rgba(255, 255, 255, 0.139);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    gap: 10px;
+  }
+}
+.home {
+  background: url("./static/main.jpg") no-repeat fixed center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home h1 {
+  font-size: 4rem;
+  color: rgb(196, 14, 156);
+  letter-spacing: 5px;
+  opacity: 0.8;
+  font-family: poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 2rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home .home-box {
+  background-color: rgba(255, 255, 255, 0.83);
+  padding: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .home h1 {
+    font-size: 3.8rem;
+  }
+  .home p {
+    font-size: 2rem;
+  }
+  .home .home-box {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .home h1 {
+    font-size: 5rem;
+  }
+  .home p {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+  .home .home-box {
+    padding: 40px;
+  }
+}
+.about .image, .content {
+  flex: 1 1 40rem;
+}
+
+.about .image img {
+  height: 65vh;
+  width: 90%;
+}
+
+.about .content h3 {
+  font-size: 3rem;
+  color: #666;
+}
+
+.about .content p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.about .btn {
+  padding: 0.7rem 3rem;
+  font-size: 2rem;
+  color: #fff;
+  background: linear-gradient(90deg, #ff44aa, #990099);
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  letter-spacing: 3px;
+  margin-left: 5em;
+}
+
+.about .btn::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -100%;
+  background: rgba(255, 255, 255, 0.6);
+  height: 150%;
+  width: 20%;
+  transform: rotate(25deg);
+  z-index: -1;
+}
+
+.about .btn:hover::before {
+  transition: 0.3s linear;
+  left: 120%;
+}
+
+.about .btn:hover, .about .btn:active {
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .about .content h3 {
+    font-size: 3rem;
+  }
+  .about .content {
+    margin-left: 10%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about .content h3 {
+    font-size: 4rem;
+  }
+  .about .content p {
+    font-size: 2rem;
+  }
+  .about a .btn {
+    font-size: 3rem;
+  }
+}
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.3098039216);
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-content {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.carousel-prev-btn,
+.carousel-next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-prev-btn {
+  left: 15px;
+}
+
+.carousel-next-btn {
+  right: 15px;
+}
+
+.carousel-prev-btn:hover, .carousel-next-btn:hover {
+  color: white;
+  background-color: rgba(51, 51, 51, 0.8);
+  width: 20px;
+}
+
+.carousel .professors {
+  height: 12.8rem !important;
+  margin-bottom: 3.2rem;
+  width: 12.8rem !important;
+}
+
+.carousel h3 {
+  font-size: 4rem;
+  color: rgb(196, 14, 156);
+  letter-spacing: 5px;
+  opacity: 0.8;
+  font-family: poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.carousel p {
+  font-size: 2rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.courses h3 {
+  font-size: 4rem;
+  color: rgb(196, 14, 156);
+  letter-spacing: 5px;
+  opacity: 0.8;
+  font-family: poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.courses .card {
+  width: 100% !important;
+}
+
+.courses .card img {
+  height: 20rem;
+  width: 100%;
+}
+
+.courses .card .card-body .title {
+  color: #444;
+  font-size: 2.1rem;
+}
+
+.courses .card .card-body .title:hover {
+  text-decoration: underline;
+}
+
+.courses .card .card-body p {
+  padding: 5px;
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.courses .card .card-body .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+.courses .card .card-body .info h3 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #666;
+}
+
+.courses .card .card-body .info i {
+  color: #990099;
+}
+
+.courses .card .price {
+  position: absolute;
+  top: 16rem;
+  right: 1rem;
+  height: 8rem;
+  width: 8rem;
+  line-height: 8rem;
+  text-align: center;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #ff44aa, #990099);
+  color: #fff;
+  font-size: 3rem;
+}
+
+.contact .contact-title {
+  font-size: 4rem;
+  color: rgb(196, 14, 156);
+  letter-spacing: 5px;
+  opacity: 0.8;
+  font-family: poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.contact .co, .image {
+  flex: 1 1 40rem;
+}
+
+.contact .image img {
+  width: 80%;
+}
+
+.contact h3 {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.contact i {
+  color: #990099;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  color: rgb(129, 129, 129);
+}
+
+span {
+  font-size: 12pt;
+  color: rgb(196, 14, 156);
+  font-weight: bold;
+}
+
+.contact .contact-info {
+  height: auto;
+  width: 75%;
+}
+
+.footer {
+  background: linear-gradient(90deg, #ff44aa, #990099);
+  width: 100%;
+}
+
+.footer h1 {
+  font-size: 4rem;
+  color: rgb(196, 14, 156);
+  letter-spacing: 5px;
+  opacity: 0.8;
+  font-family: poppins, sans-serif;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer li {
+  margin-top: 10px;
+}
+
+.footer li a {
+  font-size: 1.8rem;
+}
+
+.footer p {
+  font-size: 1.8rem;
+}
+
+#clock {
+  font-size: 1.8rem;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ff88c2, #990099);
+}
+
+/*# sourceMappingURL=main.css.map */

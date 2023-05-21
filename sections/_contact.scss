@@ -1,0 +1,42 @@
+@import "../globalSass/colors";
+@import "../globalSass/fonts";
+@import "../globalSass/mixins";
+
+.contact .contact-title{
+@include main_titles
+}
+.contact .co, .image{
+  flex:1 1 40rem;
+}
+
+.contact .image img{
+  width:80%;
+}
+
+.contact h3{
+  font-size: 1.5rem;
+  color:#666;
+}
+
+.contact i{
+  color:#990099;
+}
+
+.contact p{
+  font-size: 1.5rem;
+  color:rgb(129, 129, 129);
+}
+span{
+  font-size: 12pt;
+  color: rgb(196, 14, 156);
+  font-weight: bold;
+}
+.contact .contact-info{
+  height: auto;
+  width: 75%;
+}
+@media screen and (max-width: 767px) {
+  .contact .contact-info {
+
+  }
+}

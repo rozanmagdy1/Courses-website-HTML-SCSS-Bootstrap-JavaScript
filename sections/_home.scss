@@ -1,0 +1,48 @@
+@import "../globalSass/colors";
+@import "../globalSass/fonts";
+@import "../globalSass/mixins";
+.home {
+  background: url("./static/main.jpg") no-repeat fixed center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home h1 {
+  @include main_titles;
+}
+
+.home p {
+  @include paragraph
+}
+
+.home .home-box {
+  background-color: rgba(255, 255, 255, 0.83);
+  padding: 30px;
+}
+@media screen and (max-width: 767px) {
+  .home h1 {
+    font-size: 3.8rem;
+  }
+
+  .home p {
+    font-size: 2rem;
+  }
+
+  .home .home-box {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .home h1 {
+    font-size: 5rem;
+  }
+
+  .home p {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+
+  .home .home-box {
+    padding: 40px;
+  }
+}
