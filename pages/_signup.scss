@@ -1,0 +1,46 @@
+@import "../globalSass/colors";
+@import "../globalSass/fonts";
+@import "../globalSass/mixins";
+.signup{
+  background-image: url("./static/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.signup .signup-box{
+  background-color: #fffffff0;
+  border-radius: 10px;
+}
+.signup .signup-btn{
+  @include button-style;
+}
+.signup .signup-btn:hover, .signup .signup-btn:active{
+  @include button-hover-active;
+}
+.signup label{
+  @include form_labels;
+}
+.signup input{
+  @include form_inputs;
+}
+.signup h2{
+  @include main_titles;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .signup h2 {
+    @include main_titles;
+    font-size: 4rem;
+  }
+  .signup .signup-btn {
+    @include button-style;
+    font-size: 3rem;
+  }
+  .signup input {
+    @include form_inputs;
+    font-size: 3rem;
+  }
+  .signup label {
+    @include form_labels;
+    font-size: 3.2rem;
+  }
+}

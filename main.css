@@ -398,6 +398,224 @@ span {
   font-size: 1.8rem;
 }
 
+.login {
+  background-image: url("./static/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid linear-gradient(90deg, #ff44aa, #990099);
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+
+.login .left {
+  background-color: rgba(255, 255, 255, 0.9411764706);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-right: 2px solid rgba(128, 128, 128, 0.38);
+}
+@media screen and (max-width: 1024px) {
+  .login .left {
+    height: auto;
+  }
+}
+
+.login .left h2 {
+  font-size: 4rem;
+  color: rgb(196, 14, 156);
+  letter-spacing: 5px;
+  opacity: 0.8;
+  font-family: poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.login .left a {
+  letter-spacing: 3px;
+  font-family: poppins, sans-serif;
+  opacity: 0.7;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.login .right .login-btn,
+.login .left .signup-btn {
+  padding: 0.7rem 3rem;
+  font-size: 2rem;
+  color: #fff;
+  background: linear-gradient(90deg, #ff44aa, #990099);
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  letter-spacing: 3px;
+}
+
+.login .right .login-btn:hover,
+.login .left .signup-btn:hover,
+.login .left .signup-btn:active {
+  color: #fff;
+}
+
+.login .right {
+  background-color: rgba(255, 255, 255, 0.9411764706);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .login .right {
+    padding-top: 0 !important;
+  }
+}
+
+.login .right input {
+  font-size: 16px;
+  width: 100%;
+  height: 6vh;
+}
+
+.login .right label {
+  font-size: 19px;
+  font-family: poppins, sans-serif;
+  opacity: 0.8;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.login .form-fields {
+  width: 110%;
+}
+
+.login .row {
+  height: 60vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .login .left a {
+    font-size: 3rem;
+  }
+  .login .right .login-btn,
+  .login .left .signup-btn {
+    padding: 0.7rem 3rem;
+    font-size: 2rem;
+    color: #fff;
+    background: linear-gradient(90deg, #ff44aa, #990099);
+    border-radius: 5rem;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    letter-spacing: 3px;
+    font-size: 3rem;
+  }
+  .login .right input {
+    font-size: 16px;
+    width: 100%;
+    height: 6vh;
+    font-size: 3rem;
+  }
+  .login .right label {
+    font-size: 19px;
+    font-family: poppins, sans-serif;
+    opacity: 0.8;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-size: 3.2rem;
+  }
+}
+.signup {
+  background-image: url("./static/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.signup .signup-box {
+  background-color: rgba(255, 255, 255, 0.9411764706);
+  border-radius: 10px;
+}
+
+.signup .signup-btn {
+  padding: 0.7rem 3rem;
+  font-size: 2rem;
+  color: #fff;
+  background: linear-gradient(90deg, #ff44aa, #990099);
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  letter-spacing: 3px;
+}
+
+.signup .signup-btn:hover, .signup .signup-btn:active {
+  color: #fff;
+}
+
+.signup label {
+  font-size: 19px;
+  font-family: poppins, sans-serif;
+  opacity: 0.8;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.signup input {
+  font-size: 16px;
+  width: 100%;
+  height: 6vh;
+}
+
+.signup h2 {
+  font-size: 4rem;
+  color: rgb(196, 14, 156);
+  letter-spacing: 5px;
+  opacity: 0.8;
+  font-family: poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .signup h2 {
+    font-size: 4rem;
+    color: rgb(196, 14, 156);
+    letter-spacing: 5px;
+    opacity: 0.8;
+    font-family: poppins, sans-serif;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+  }
+  .signup .signup-btn {
+    padding: 0.7rem 3rem;
+    font-size: 2rem;
+    color: #fff;
+    background: linear-gradient(90deg, #ff44aa, #990099);
+    border-radius: 5rem;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    letter-spacing: 3px;
+    font-size: 3rem;
+  }
+  .signup input {
+    font-size: 16px;
+    width: 100%;
+    height: 6vh;
+    font-size: 3rem;
+  }
+  .signup label {
+    font-size: 19px;
+    font-family: poppins, sans-serif;
+    opacity: 0.8;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-size: 3.2rem;
+  }
+}
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;

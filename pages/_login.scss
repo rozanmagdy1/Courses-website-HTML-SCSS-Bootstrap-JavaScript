@@ -1,0 +1,80 @@
+@import "../globalSass/colors";
+@import "../globalSass/fonts";
+@import "../globalSass/mixins";
+.login {
+  background-image: url("./static/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid $color1;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+.login .left {
+  background-color: #fffffff0;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+
+  border-right: 2px solid rgb(128 128 128 / 38%);
+  @media screen and (max-width: 1024px) {
+    height: auto;
+  }
+}
+.login .left h2 {
+  @include main_titles;
+}
+.login .left a {
+  letter-spacing: 3px;
+  font-family: $font2;
+  opacity: 0.7;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.login .right .login-btn,
+.login .left .signup-btn {
+  @include button-style;
+}
+.login .right .login-btn:hover,
+.login .left .signup-btn:hover,
+.login .left .signup-btn:active {
+  @include button-hover-active;
+}
+.login .right {
+  background-color: #fffffff0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  @media screen and (max-width: 1024px) {
+    padding-top: 0 !important;
+  }
+}
+.login .right input {
+  @include form_inputs;
+}
+.login .right label {
+  @include form_labels;
+}
+.login .form-fields {
+  width: 110%;
+}
+.login .row {
+  height: 60vh;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .login .left a {
+    font-size: 3rem;
+  }
+  .login .right .login-btn,
+  .login .left .signup-btn {
+    @include button-style;
+    font-size: 3rem;
+  }
+  .login .right input {
+    @include form_inputs;
+    font-size: 3rem;
+  }
+  .login .right label {
+    @include form_labels;
+    font-size: 3.2rem;
+  }
+}
+
+
